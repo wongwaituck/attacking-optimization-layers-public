@@ -1,0 +1,26 @@
+YIELD = 0
+STOP = 1
+NO_ENTRY = 2
+SPEED_LIMIT = 3
+PEDESTRIAN_XING = 4
+
+CLASSES = [ 
+    YIELD, 
+    STOP,
+    NO_ENTRY,
+    SPEED_LIMIT,
+    PEDESTRIAN_XING,
+]
+
+CLASS_MAP = {
+    "00019": YIELD, 
+    "00021": STOP,
+    "00022": NO_ENTRY,
+    "00032": SPEED_LIMIT,
+    "00056": PEDESTRIAN_XING,
+}
+
+CLASS_MAP_REV = {v: k for k, v in CLASS_MAP.items()}
+
+
+IMG_DIMENSIONS = (56, 56, 3)
